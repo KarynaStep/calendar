@@ -1,0 +1,33 @@
+@use '/src/common/styles/_colors' as *;
+@use '/src/common/styles/breackpoints' as *;
+
+.wrapperViewMonth{
+  width: 50%;
+  text-align: center;
+  h2{
+    margin-top: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: $colorBorder
+  }
+  table{
+    text-align: center;
+    margin: auto;
+  }
+  th{
+    color: $colorPink;
+    text-transform: uppercase;
+    padding: 8px;
+  }
+  td{
+    font-weight: 500;
+  }
+}
+
+@media (max-width: $sm) {
+  .wrapperViewMonth{
+    width: 100%;
+  }
+}
